@@ -1,0 +1,73 @@
+@keyframes fadeIn {
+	from {
+		opacity: 0.6;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.hover {
+	animation-name: fadeIn;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+.track {
+	position: fixed;
+	right: 2%;
+	bottom: 10%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	width: 100px;
+}
+
+.track div, .track span {
+	font-size: 11pt;
+}
+
+.track.track-debug {
+	background: none;
+	border: 0;
+	padding: 0;
+}
+
+.track > div:hover {
+	animation-name: fadeIn;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+.track > div[rails-ref] {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+	border-radius: 50%;
+	width: 16px;
+	height: 16px;
+	opacity: 0.6;
+	cursor: pointer;
+	margin-top: 8px;
+}
+
+.track > div[rails-ref] span {
+	color: #5a5a5a;
+}
+
+.rails-hints {
+	position: relative;
+	font-size: 10pt;
+	color: #3c3c3c;
+	opacity: 0;
+	text-align: right;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-top: 8px;
+}

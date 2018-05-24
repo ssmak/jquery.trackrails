@@ -1,0 +1,38 @@
+{
+  "name": "jquery.trackrails",
+  "version": "1.0.0",
+  "description": "Keeps track and provides user friendly page navigation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssmak/jquery.trackrails.git"
+  },
+  "keywords": [
+    "jquery",
+    "page",
+    "navigation",
+    "tracker",
+    "track",
+    "rails",
+    "roadmap",
+    "minimap"
+  ],
+  "author": "ssmak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ssmak/jquery.trackrails/issues"
+  },
+  "homepage": "https://github.com/ssmak/jquery.trackrails#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-npm-dist": "^1.0.1",
+    "gulp-sequence": "^1.0.0",
+    "gulp-uglify": "^3.0.0",
+    "pump": "^3.0.0"
+  }
+}

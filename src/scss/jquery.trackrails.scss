@@ -1,0 +1,76 @@
+$rails-size: 16px;
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hover {
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.track {
+  position: fixed;
+  right: 2%;
+  bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100px;
+
+  div, span {
+    font-size: 11pt;
+  }
+
+  &.track-debug{
+    background-color: #54ad00;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: 5px;
+  }
+
+  > div:hover {
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  > div[rails-ref] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+    width: $rails-size;
+    height: $rails-size;
+    opacity: 0.6;
+    cursor: pointer;
+    margin-top: 8px;
+
+    span {
+      color: rgb(90, 90, 90);
+    }
+  }
+}
+
+.rails-hints {
+  position: relative;
+  font-size: 10pt;
+  color: rgb(60, 60, 60);
+  opacity: 0;
+  text-align: right;
+  // width: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 8px;
+}
