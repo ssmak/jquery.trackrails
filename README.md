@@ -34,4 +34,4 @@ npm install jquery.trackrails --save
 ```
 
 ## Reference
-This plugin is quite simple and you can reference the test page (~/test/index.html) directly which locates in the test folder.
+This plugin is quite simple and you can refer to the test page (~/test/index.html) directly which locates in the test folder.
