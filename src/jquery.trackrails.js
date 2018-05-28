@@ -112,7 +112,7 @@
         html = html + '<div rails-title="' + railsTitle + '" rails-ref="' + railsID + '"></div>';
 
         if (idx === $('.rails').length - 1) {
-          html = html + '<div rails-title="Top" rails-ref="0"><span class="fa fa-chevron-up"></span></div><div class="rails-hints">*</div>';
+          html = html + '<div rails-title="&nbsp;" rails-ref="0"><span class="fa fa-chevron-up"></span></div><div class="rails-hints">*</div>';
           domSetupCompletedCallback(html);
         }
       });
