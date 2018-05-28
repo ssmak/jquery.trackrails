@@ -5,22 +5,22 @@ Provides section/page navigation through a roadmap. You will know where are you 
 Targeted on the ease of use. All the dependecies that're required by jquery.trackrails will be loaded automatically from cdnjs.com on demand. If the dependency haa already loaded like jQuery, the existing version will be used.
 
 ## How to use (step-by-step) ?
-1) Install the library by npm
+###1) Install the library by npm
 ```
 npm install jquery.trackrails --save
 ```
 
-2) Includes the stylesheet in &lt;header&gt;
+###2) Includes the stylesheet in &lt;header&gt;
 ```  
 <link rel="stylesheet" href="../dist/jquery.trackrails.min.css">
 ```
 
-3) Includes the script at the last line of &lt;body&gt;
+###3) Includes the script at the last line of &lt;body&gt;
 ```
 <script src="../dist/jquery.trackrails.js" rails-easing="easeOutExpo" rails-duration="1000"></script>
 ```  
 
-4) Construct the track like this:
+###4) Construct the track like this:
 ```
 <div class="section rails" style="background-color:#f00">
   Section-A
