@@ -143,7 +143,14 @@
       // console.error(railsEasing, ',', railsDuration);
 
       // Register rail events
-      $(html).appendTo('body');
+      // check if trackrails class is set -> append the roadmap to this tag
+      if ($('.trackrails').length == 1) {
+        //trackrails class is existed -> attach the roadmap
+        $(html).appendTo('.trackrails');
+      } else {
+        //no trackrails class found -> attach to body by default
+        $(html).appendTo('body');
+      }
       //add events trigger
       $('.track > div[rails-ref]').mouseover(function (evt) {
         //mouseover
