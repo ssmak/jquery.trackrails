@@ -1,4 +1,4 @@
-@keyframes fadeIn {
+@keyframes jq-trackrails-fadeIn {
 	from {
 		opacity: 0.6;
 	}
@@ -8,14 +8,14 @@
 	}
 }
 
-.hover {
-	animation-name: fadeIn;
+.jq-trackrails.hover {
+	animation-name: jq-trackrails-fadeIn;
 	animation-duration: 0.5s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
 }
 
-.track {
+.jq-trackrails.track {
 	position: fixed;
 	right: 2%;
 	bottom: 10%;
@@ -25,24 +25,25 @@
 	width: 100px;
 }
 
-.track div, .track span {
+.jq-trackrails.track div, .jq-trackrails.track span {
 	font-size: 11pt;
 }
 
-.track.track-debug {
+.jq-trackrails.track.track-debug {
 	background: none;
-	border: 0;
+	border: none;
+	border-radius: 0;
 	padding: 0;
 }
 
-.track > div:hover {
-	animation-name: fadeIn;
+.jq-trackrails.track > div:hover {
+	animation-name: jq-trackrails-fadeIn;
 	animation-duration: 0.5s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
 }
 
-.track > div[rails-ref] {
+.jq-trackrails.track > div[rails-ref] {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -56,11 +57,11 @@
 	margin-top: 8px;
 }
 
-.track > div[rails-ref] span {
+.jq-trackrails.track > div[rails-ref] span {
 	color: #5a5a5a;
 }
 
-.rails-hints {
+.jq-trackrails.rails-hints {
 	position: relative;
 	font-size: 10pt;
 	color: #3c3c3c;

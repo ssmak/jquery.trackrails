@@ -91,7 +91,7 @@
 })(function () {
   // Dependencies load completed
   $(document).ready(function () {
-    var html = '<div class="track track-debug">';
+    var html = '<div class="jq-trackrails track track-debug">';
 
     (function (domSetupCompletedCallback) {
       // Find all the rails from whole document object model
@@ -130,7 +130,7 @@
 
       // Animation preset
       var railsEasing = 'easeOutCubic',
-          railsDuration = 500; //default
+          railsDuration = 1500; //default
       var overrideRailsEasing = $('script[rails-easing]');
       if (overrideRailsEasing.length) {
         railsEasing = $(overrideRailsEasing).attr('rails-easing');
@@ -144,9 +144,9 @@
 
       // Register rail events
       // check if trackrails class is set -> append the roadmap to this tag
-      if ($('.trackrails').length == 1) {
+      if ($('.jq-trackrails').length == 1) {
         //trackrails class is existed -> attach the roadmap
-        $(html).appendTo('.trackrails');
+        $(html).appendTo('.jq-trackrails');
       } else {
         //no trackrails class found -> attach to body by default
         $(html).appendTo('body');
@@ -210,6 +210,13 @@
                 if (nearestRails == null) {
                   nearestRails = r;
                 } else {
+                  //check if page bottom reached
+                  if ($(window).height() + scrollTop >= $(document).height()) {
+                    //page bottom reached
+                    nearestRails = rails[rails.length - 1];
+                    break;
+                  }
+
                   //compare two rails and find the nearest rails
                   if (Math.abs(r.top - scrollTop) < Math.abs(nearestRails.top - scrollTop)) {
                     nearestRails = r;
@@ -233,8 +240,8 @@
               }
             }
 
-            $('div[rails-ref]').removeClass('hover');
-            $('div[rails-ref=' + $(nearestRails.rails).attr('rails-id') + ']').addClass('hover');
+            $('div[rails-ref]').removeClass('jq-trackrails hover');
+            $('div[rails-ref=' + $(nearestRails.rails).attr('rails-id') + ']').addClass('jq-trackrails hover');
 
             window.trackrails.scrollHandler = null;
           }, 100);
