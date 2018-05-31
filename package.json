@@ -1,6 +1,6 @@
 {
   "name": "jquery.trackrails",
-  "version": "1.8.0",
+  "version": "1.8.1",
   "description": "Keeps track and provides user friendly page navigation.",
   "main": "index.js",
   "scripts": {
