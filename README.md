@@ -1,7 +1,12 @@
 <h1 align="center">jquery.trackrails</h1>
 
 <h5 align="center">Create track points for a page and make the section browsering more easily.</h5>
-
+<br />
+<div align="center">
+  <a href="https://nodei.co/npm/jquery.trackrails/">
+    <img src="https://nodei.co/npm/jquery.trackrails.png?compact=true">
+  </a>
+</div>
 <br />
 
 ## History
