@@ -1,6 +1,6 @@
 <h1 align="center">jquery.trackrails</h1>
 
-<h5 align="center">Create track points for a webpage and make the section browsering more easily.</h5>
+<h5 align="center">Create track points for a page and make the section browsering more easily.</h5>
 
 <br />
 
