@@ -18,7 +18,7 @@ This is one of my side projects and it's especially useful on a single infinite 
 </div>
 
 ## Demonstration on CodePen
-https://codepen.io/ssmak/pen/XYmEMO
+https://codepen.io/ssmak/pen/zarLVV
 
 ## Installation + Use
 1. Install to your project as dependency from NPM (https://www.npmjs.com/package/jquery.trackrails)
