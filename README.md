@@ -10,7 +10,7 @@
 <br />
 
 ## History
-Without guidelines, users are difficult to understand the structure and hard to find out something from a page thAt includes many sections.
+Without guidelines, users are difficult to understand the structure and hard to find out something from a page that includes many sections.
 <br />
 This one is my side project and focus on solving the UI + UX for a single infinite page.
 <br />
