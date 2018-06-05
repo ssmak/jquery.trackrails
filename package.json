@@ -1,7 +1,7 @@
 {
   "name": "jquery.trackrails",
   "version": "1.8.3",
-  "description": "Keeps track and provides user friendly page navigation.",
+  "description": "Create track points for a page and make the section browsering more easily.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
