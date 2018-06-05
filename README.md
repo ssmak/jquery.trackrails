@@ -80,5 +80,19 @@ npm install lite-server -g
 cd /project_root && lite-server
 ```
 
+## Customization
+**rails-title**<br />
+The title of the track point. If not set, the content will be used.
+``` html
+<div class="section rails" rails-title="use title" style="background-color:#0f0">Section-2</div>
+```
+**rails-easing**<br />
+The easing animation that will be used on track moving. Please visit here for details: https://easings.net/zh-tw<br />
+**rails-duration**<br />
+How long will be moved to the target. Unit in ms, 2000 = 2 seconds.
+``` html
+<script src="/node_modules/jquery.trackrails/dist/jquery.trackrails.js" rails-easing="easeOutExpo" rails-duration="2000"></script>
+```
+
 ## License
 MIT
