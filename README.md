@@ -10,7 +10,9 @@
 <br />
 
 ## History
-This is one of my side projects and it's especially useful on a single infinite web page browsing. Let your user have the best understanding which contents that your page provides and go to each section more easily by tap/click the track point.
+Without guidelines, users are difficult to understand the structure and hard to find out something from a page thAt includes many sections.
+This one is my side project and focus on solving the UI + UX for a single infinite page.
+**jquery.trackrails** is useful on a single infinite web page browsing. It lets your users have a best understanding that your page provides and can reach each section more easily by tap/click the track point.
 
 <div align="center">
   <a href="https://paypal.me/ssmak">
