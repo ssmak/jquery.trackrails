@@ -38,7 +38,7 @@ npm install jquery.trackrails --save
 ``` html
 <!-- // HEAD -->
 <!-- put below stylesheets between the 'head' tag in below order -->
-<!-- font awesome 3 - optional, but I use it in my test page. -->
+<!-- font awesome 4 - optional, but I use it in my test page. -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- jquery.trackrails, css(default) - provide default rendering -->
 <link rel="stylesheet" href="/node_modules/jquery.trackrails/dist/jquery.trackrails.min.css">
