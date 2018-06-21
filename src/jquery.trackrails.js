@@ -144,9 +144,9 @@
 
       // Register rail events
       // check if trackrails class is set -> append the roadmap to this tag
-      if ($('.jq-trackrails').length == 1) {
+      if ($('#jq-trackrails').length == 1) {
         //trackrails class is existed -> attach the roadmap
-        $(html).appendTo('.jq-trackrails');
+        $(html).appendTo('#jq-trackrails');
       } else {
         //no trackrails class found -> attach to body by default
         $(html).appendTo('body');
