@@ -195,6 +195,15 @@
       })(function () {
         if (window.trackrails.scrollHandler == null) {
           window.trackrails.scrollHandler = setTimeout(function () {
+            // Rails location
+            var rails = $('.rails').map(function (idx, rails) {
+              return {
+                rails: rails,
+                top: $(rails).position().top
+              };
+            });
+            rails = $.makeArray(rails);
+
             var scrollTop = $(window).scrollTop();
             // console.warn(scrollTop);
             var nearestRails = null;
