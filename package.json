@@ -1,6 +1,6 @@
 {
   "name": "jquery.trackrails",
-  "version": "1.8.5",
+  "version": "1.9.0",
   "description": "Create track points for a page and make the section browsering more easily.",
   "main": "index.js",
   "scripts": {
